@@ -4,5 +4,5 @@
 
 ```shell script
 cargo build --target wasm32-unknown-unknown --bin worker
-wasm-bindgen --target no-modules --no-typescript --out-dir static/ --out-name worker ../../target/wasm32-unknown-unknown/debug/worker.wasm
+wasm-bindgen --target no-modules --no-typescript --out-dir static/ --out-name worker target/wasm32-unknown-unknown/debug/worker.wasm
 ```
